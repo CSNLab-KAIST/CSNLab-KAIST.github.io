@@ -1,5 +1,5 @@
 title:               Celeste
-url:                 https://nicoelayda.github.io
+url:                 https://CSNLab-KAIST.github.io
 baseurl:             ""
 
 markdown:            kramdown
@@ -20,7 +20,7 @@ sass:
 
 author:
   name:              Nico Elayda
-  url:               nicoelayda.github.io
+  url:               CSNLab-KAIST.github.io
   email:             nico@elayda.com
 
 plugins:
