@@ -1,0 +1,13 @@
+- title: "A Novel Approach to Deep Learning"
+  conference: "NeurIPS"
+  location: "Vancouver, Canada"
+  authors: "John Doe, Jane Smith"
+  pdf: "https://example.com/paper1.pdf"
+  pre: "https://youtube.com/example1"
+
+- title: "Understanding Reinforcement Learning"
+  conference: "ICML"
+  location: "Stockholm, Sweden"
+  authors: "Alice Brown, Bob Johnson"
+  pdf: "https://example.com/paper2.pdf"
+  pre: "https://youtube.com/example2"
