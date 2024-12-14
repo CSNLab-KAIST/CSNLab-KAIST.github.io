@@ -1,0 +1,154 @@
+---
+layout: default
+title: Publications
+permalink: /publications/
+---
+
+<head>
+    <style>
+        /* 页面基础样式 */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f7fa;
+            margin: 0;
+            padding: 0;
+            color: #333;
+        }
+
+        .publications {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+
+        .publications h1 {
+            text-align: center;
+            font-size: 36px;
+            margin-bottom: 30px;
+            color: #4CAF50;
+        }
+
+        .publication-list {
+            list-style: none;
+            padding: 0;
+        }
+
+        .publication-item {
+            background-color: #fff;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            margin-bottom: 20px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .publication-item:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+        }
+
+        .publication-info {
+            padding: 20px;
+        }
+
+        .publication-info h2 {
+            margin: 0;
+            font-size: 24px;
+            color: #333;
+        }
+
+        .publication-info p {
+            margin: 5px 0;
+            font-size: 16px;
+        }
+
+        .publication-info p strong {
+            font-weight: bold;
+            color: #4CAF50;
+        }
+
+        .publication-buttons {
+            padding: 20px;
+            text-align: center;
+            background-color: #f9f9f9;
+            border-top: 1px solid #ddd;
+        }
+
+        /* 按钮基础样式 */
+        .btn {
+            display: inline-block;
+            padding: 10px 15px;
+            text-decoration: none;
+            border-radius: 5px;
+            font-size: 14px;
+            margin-right: 10px;
+            transition: background-color 0.3s ease, color 0.3s ease, border 0.3s ease;
+            border-width: 2px;
+            border-style: solid;
+            background-color: rgb(205, 186, 186);
+            /* 背景填充白色 */
+        }
+
+        /* PDF按钮的粉色边框 */
+        .pdf-btn {
+            border-color: #e19fc0;
+            /* 粉色边框 */
+            color: #e19fc0;
+            /* 字体颜色为粉色 */
+        }
+
+        .pdf-btn:hover {
+            background-color: #ffffff;
+            /* 悬浮时背景变灰 */
+            color: #e19fc0;
+            /* 悬浮时字体颜色改为深色 */
+        }
+
+        /* Pre按钮的绿色边框 */
+        .pre-btn {
+            border-color: #93daa4;
+            /* 绿色边框 */
+            color: #93daa4;
+            /* 字体颜色为绿色 */
+        }
+
+        .pre-btn:hover {
+            background-color: #f0f0f0;
+            /* 悬浮时背景变灰 */
+            color: #93daa4;
+            /* 悬浮时字体颜色改为深色 */
+        }
+
+        @media (max-width: 768px) {
+            .publication-item {
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+
+<div class="publications">
+    <h1>{{ page.title }}</h1>
+    <ul class="publication-list">
+        {% for pub in site.data.publications %}
+        <li class="publication-item">
+            <div class="publication-info">
+                <h2>{{ pub.title }}</h2>
+                <p><strong>{{ pub.conference }}</strong>, {{ pub.location }}</p>
+                <p>Authors: {{ pub.authors }}</p>
+            </div>
+            <div class="publication-buttons">
+                {% if pub.pdf %}
+                <a href="{{ pub.pdf }}" class="btn pdf-btn" target="_blank">PDF</a>
+                {% endif %}
+                {% if pub.pre %}
+                <a href="{{ pub.pre }}" class="btn pre-btn" target="_blank">Pre</a>
+                {% endif %}
+            </div>
+        </li>
+        {% endfor %}
+    </ul>
+</div>
