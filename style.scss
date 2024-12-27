@@ -15,13 +15,13 @@ body {
 }
 
 html {
-  font-family: "Open Sans", "Source Sans Pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-size: 18px;
+  font-family: "Merriweather","PT Serif","Open Sans", "Source Sans Pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 20px;
   font-weight: 300;
   line-height: 1.6;
 
   @media (min-width: 38em) {
-    font-size: 20px;
+    font-size: 22px;
   }
 }
 
@@ -46,18 +46,29 @@ a {
   }
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1{
+  margin-top: 0;
+  margin-bottom: .5rem;
+  font-family: "Merriweather";
+  font-weight: 600;
+  line-height: 1.1;
+  color: #333;
+  letter-spacing: -.025rem;
+}
+
+
+h2, h3, h4, h5, h6 {
   margin-top: 0;
   margin-bottom: .5rem;
   font-weight: 600;
-  font-family: "Open Sans", "Source Sans Pro";
+  font-family: "PT Serif", "Merriweather","Open Sans", "Source Sans Pro";
   line-height: 1.1;
   color: #333;
   letter-spacing: -.025rem;
 }
 
 h1 {
-  font-size: 2rem;
+  font-size: 1.6rem;
 }
 
 h2 {
@@ -73,14 +84,43 @@ h4, h5, h6 {
 }
 
 p {
-  font-family: "Open Sans", "Helvetica Neue", Helvetica;
+  font-family:  "Merriweather";
   font-weight: 300;
   margin: 0 0 1rem;
   font-size: 0.8rem;
 }
 
+.button {
+  display: inline-block; /* 让按钮成为块状元素，但允许在同一行 */
+  padding: 15px 25px; /* 调整按钮的内边距 */
+  color: #fff; /* 设置字体颜色为白色 */
+  font-family:  "Merriweather";
+  font-weight: 300;
+  font-weight: bold; /* 字体加粗 */
+  text-align: center; /* 字体居中 */
+  border-radius: 5px; /* 设置按钮的圆角 */
+  margin: 10px; /* 按钮之间的间距 */
+  cursor: pointer; /* 鼠标悬停时显示为手指形状 */
+  text-decoration: none; /* 移除下划线（如果是链接的话） */
+}
+
+.button:hover {
+  opacity: 0.9; /* 添加悬停效果 */
+}
+
+.image-slider {
+  position: relative;
+  display: inline-block;
+  text-align: center;
+}
+
+#image {
+  transition: opacity 0.5s ease; /* 添加图片淡入淡出的效果 */
+}
+
+
 ul, ol, dl {
-  font-family: "Open Sans", "Helvetica Neue", Helvetica;
+  font-family:  "PT Serif","Open Sans", "Merriweather";
   font-weight: 300;
   font-size: 0.8rem;
   margin-top: 0;
@@ -185,7 +225,7 @@ blockquote {
 
 code,
 pre {
-  font-family: Monaco, "Courier New", monospace;
+  font-family:  "PT Serif",Monaco, "Courier New", monospace;
 }
 
 code {
@@ -228,7 +268,7 @@ pre code {
 }
 
 .gist .gist-file {
-  font-family: Monaco, "Courier New", monospace !important;
+  font-family: "PT Serif", Monaco, "Courier New", monospace !important;
 }
 
 .gist .markdown-body {
@@ -257,6 +297,7 @@ img {
   max-width: 100%;
   margin: 0 0 1rem;
   border-radius: 5px;
+
 }
 
 table {
@@ -284,7 +325,7 @@ tbody tr:nth-child(odd) th {
 }
 
 .container {
-  max-width: 40rem;
+  max-width: 50rem;
 //  padding: 2rem 1.5rem;
   margin-left:  auto;
   margin-right: auto;
@@ -518,7 +559,7 @@ tbody tr:nth-child(odd) th {
 // change font for navbar
 .navbar, .navbar-nav>li>a {
   background-color: white;
-  font-family: 'Open Sans', sans-serif;
+  font-family:  "PT Serif";
   text-transform: uppercase;
   font-weight: 400;
   font-size: 80%;
@@ -547,3 +588,4 @@ tbody tr:nth-child(odd) th {
   border: none;
   background-color: #FFF;
 }
+
