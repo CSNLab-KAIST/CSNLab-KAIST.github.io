@@ -2,7 +2,7 @@ const anchors = [
     "Computer-Architecture",        // research 页面上的第一个 ## 标题
     "Interconnection-Networks",     // research 页面上的第二个 ## 标题
     "Hardware-Security",             // 第四个 ##
-    "Human-computer-interaction"
+    "Human-Computer-Interaction"
   ];
   
   // 跳转到指定锚点的函数
