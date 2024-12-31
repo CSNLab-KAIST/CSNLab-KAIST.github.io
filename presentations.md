@@ -3,7 +3,10 @@ title: Reference
 permalink: /presentations/
 ---
 
-### Upcoming lab meetings
+### Courses
+
+
+<!-- ### Upcoming lab meetings
 
 Every Friday at 13:30 EST, we get together (mix of virtual and in person) for lab presentations (with food! sometimes).
 On a rotating basis, each member of the lab speaks and teaches about something they know or shares their work. 
@@ -92,4 +95,4 @@ Get on the [listserv for announcements](https://groups.google.com/forum/#!forum/
   {% endfor %}
 </div>
 
-<hr>
+<hr> -->

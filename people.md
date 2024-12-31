@@ -15,7 +15,7 @@ permalink: /people/
   {% continue %}
 {% endif %}
 
-<div class="pos_header">
+<!-- <div class="pos_header">
 {% if role == 'postdoc' %}
 <h3>Postdoctoral Fellows</h3>
  {% elsif role == 'pi' %}
@@ -31,9 +31,26 @@ permalink: /people/
  {% elsif role == 'alumni' %}
 <h3>Alumni</h3>
 {% endif %}
+</div> -->
+<!-- <h3>Professor </h3>
+<h3>PhD candidate</h3>
+<h3>Graduate Students</h3>
+<h3>Undergraduate intern</h3> -->
+<div class="pos_header">
+{% if role == 'pi' %}
+<h3> Associate Professor </h3>
+ {% elsif role == 'postdoc' %}
+<h3>PhD candidates</h3>
+ {% elsif role == 'gradstudent' %}
+<h3>Graduate Students</h3>
+ {% elsif role == 'researchstaff' %}
+<h3>Undergraduate intern</h3>
+ {% elsif role == 'alumni' %}
+<h3>Alumni</h3>
+{% endif %}
 </div>
 
-{% if role != 'alumni' %}
+<!-- {% if role != 'alumni' %}
 <div class="content list people">
   {% for profile in people_sorted %}
     {% if profile.position contains role %}
@@ -52,13 +69,15 @@ permalink: /people/
 </div>
 <hr>
 
-{% else %}
+{% else %} -->
 
 <br>
 
 | Who are they | When were they here | Where they went |
-| :------------- |:-------------| :-----------|
-| [Tony Liu](https://tliutony.github.io/) | Graduate Student (2018-2024) | Assistant Professor of Computer Science, Mount Holyoke College |
+XXX| Graduate Student (2021-2023) | Place |
+
+<!-- | :------------- |:-------------| :-----------| -->
+<!-- | [Tony Liu](https://tliutony.github.io/) | Graduate Student (2018-2024) | Assistant Professor of Computer Science, Mount Holyoke College |
 | [Xinyue Wang](https://www.charonwangg.com/) | Graduate Student (2021-2023) | PhD Student, Halıcıoğlu Data Science Institute, UCSD |
 | [Ilenna Jones](https://www.ilenna.com/) | Graduate Student (2017-2023) | Postdoc, Kemptner Institute, Harvard|
 | [Ben Baker](https://www.tbenbaker.com/) | Post-doc (2021-2023) | Assistant Professor of Philosophy at Colby|
@@ -122,7 +141,7 @@ permalink: /people/
 | Nicholas Bowman | Rotation Student (Winter 2007) | Senior Data Scientist at IsoPlexis |
 | Taro Kiritani | Rotation Student (Winter 2007) | ExaWizards Inc. in Tokyo |
 | Rashmi Sarnaik | Rotation Student (Winter 2007) | Scientific Editor at Neuron |
-| Emily Oby | Rotation Student (Fall 2006) | Postdoc w/ Aaron Batista at University of Pittsburgh |
+| Emily Oby | Rotation Student (Fall 2006) | Postdoc w/ Aaron Batista at University of Pittsburgh | -->
 
 {% endif %}
 {% endfor %}
