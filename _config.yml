@@ -1,0 +1,67 @@
+# # # # # # # #
+#   K i k o   #
+# # # # # # # #
+
+# Basic
+name:               "CSNLab@KAIST"
+title:              "CSNLab@KAIST"
+description:        "The Kording Lab is a computational neuroscience and causality research group at the University of Pennsylvania."
+
+
+# URL
+url:                http://CSNLab-KAIST.github.io
+baseurl:            
+#baseurl:            "" #For Root Domain
+permalink:          /:year/:month/:day/:title.html
+
+# Markdown
+markdown:           kramdown
+
+# Highlighter
+highlighter:        rouge
+
+# Navigation
+nav:
+  - name:           "home"
+    href:           "/"
+  - name:           "about"
+    href:           "/about"
+  - name:           "publications"
+    href:           "/publication"
+  - name:           "people"
+    href:           "/people"
+  - name:           "research"
+    href:           "/research"
+  - name:           "lab teachings"
+    href:           "/presentations"
+
+# Sass
+sass:
+  style:            :compressed
+
+# Scopes
+defaults:
+  -
+    scope:
+      path:         ""
+      type:         "pages"
+    values:
+      layout:       "page"
+  -
+    scope:
+      path:         ""
+      type:         "posts"
+    values:
+      layout:       "post"
+  -
+    scope:
+      path:         ""
+      type:         "people"
+    values:
+      layout:       "profile"
+
+
+collections:
+  people:
+    output: true
+    permalink: /people/:title/index.html

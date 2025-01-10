@@ -1,0 +1,85 @@
+---
+layout: default
+---
+
+<div class='container'>
+    <header class="masthead text-center">
+      <h1>Welcome to Computer System and Network Lab(CSNLab)!</h1>
+      <span style="display: block; margin-bottom: 3em"></span>
+      <!-- <img class='img-responsive center-block' src="/images/people/Member1.jpg" width="60%" height="60%" /> -->
+      <div 
+          id="image-container" 
+          style="
+            width: 1000px; 
+            height: 600px; 
+            overflow: hidden; 
+            margin: 0 auto; 
+            display: flex; 
+            justify-content: center; 
+            align-items: center;"
+        >
+          <div class="image-slider">
+            <img 
+              id="image" 
+              class="img-responsive center-block" 
+              src="/images/people/Members1.jpg" 
+              style="width: 100%; height: 100%; object-fit: cover;"
+            />
+          </div>
+        </div>
+
+     <p>Refer to our research topics</p>
+      <p>
+        <div class="button" style="background-color: #4535C1;" data-index="0" onclick="navigateToSection(this)">
+          <i>Computer Architecture</i>
+        </div>
+        <div class="button" style="background-color: #478CCF;" data-index="1" onclick="navigateToSection(this)">
+          <i>Interconnection Networks</i>
+        </div>
+        <div class="button" style="background-color: #36C2CE;" data-index="2" onclick="navigateToSection(this)">
+          <i>Hardware Security</i>
+        </div>
+        <div class="button" style="background-color: #77E4C8;" data-index="3" onclick="navigateToSection(this)">
+          <i>Human Computer Interaction</i>
+        </div>
+        <span style="display: block; margin-bottom: 1em">
+        </span>
+        <p><i>Attention: We are actively recruiting students that are <span style="text-decoration: underline; text-decoration-color: green;">interested in computer architecture, GPU, hardware security, and deep learning architectures.</span> If you are interested, please contact us at <b>jjk12 at kaist dot edu</b>.</i></p>
+
+        <span style="display: block; margin-bottom: 3em"></span>
+
+      <!-- <a href="https://github.com/KordingLab"><i class="fa fa-github"></i> KordingLab</a>&nbsp;&nbsp;&nbsp;
+      <a href="https://twitter.com/KordingLab"><i class="fa fa-twitter"></i> KordingLab</a>&nbsp;&nbsp;&nbsp; -->
+      <a href="icnee@kaist.ac.kr"><i class="fa fa-envelope-o"></i> Email</a>
+      <a href="+82-42-350-7548"><i class="fa fa-phone"></i> Phone</a>
+      </p>
+
+      <div class="w3-container" style="   background: #fefefe; padding: 25px; border-radius:10px; border: 2px solid  #13be82">
+        <div style="text-align:left">
+          <h3> Recent News </h3>
+          <span style="display: block; margin-bottom: 1em"></span>
+          <div class="news">
+              {% capture now %}{{'now' | date: '%s' | minus: 7776000 %}}{% endcapture %}
+              <ul style="list-style-position:outside;padding:20px" >
+                {% for new in site.data.news %}
+                  {% capture date %}{{new.date | date: '%s' | plus: 0 %}}{% endcapture %}
+                  {% if date > now %}
+                    <li>
+                      <span>
+                        {{ new.details }}
+                      </span>
+                    </li>
+                  {% endif %}
+                {% endfor %}
+              </ul>
+          </div>
+        </div >
+      </div>
+
+     <span style="display: block; margin-bottom: 3em"></span>
+      Department of Electrical Engineering at KAIST<br>
+      N1 518 Kim Byeong-ho IT building 291, Daehak-ro, Yuseong-gu, DaejeonRepublic of Korea.
+      <span style="display: block; margin-bottom: 3em"></span>
+
+    </header>
+</div>
