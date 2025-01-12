@@ -1,0 +1,72 @@
+html {
+    scroll-behavior: smooth;
+}
+
+.publication-page {
+    display: flex;
+}
+
+.publication-content {
+    display: flex;
+    flex: 1;
+}
+
+.publication-list {
+    flex: 3;
+    padding: 0px;
+}
+
+.roboto-slab-roboto-slab-year-title {
+    font-family: "Roboto Slab", serif;
+    font-optical-sizing: auto;
+    font-weight: 900;
+    font-style: normal;
+}
+
+.icon-link {
+    font-family: "Sour Gummy";
+    color: #CA7373;
+}
+
+.year-navigation {
+    position: sticky;
+    /* 使用 sticky 定位 */
+    top: 60px;
+    /* 距离顶部的固定位置 */
+    height: calc(100vh - 20px);
+    /* 高度适配整个可视窗口 */
+    overflow-y: auto;
+    /* 允许内容超出时滚动 */
+    padding: 20px;
+    background-color: #ffffff;
+    /* 设置背景颜色 */
+
+    /* 添加右侧阴影 */
+}
+
+.year-navigation h3 {
+    font-size: 1.0rem;
+    margin-bottom: 10px;
+}
+
+.year-navigation ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.year-navigation ul li {
+    margin: 5px 0;
+}
+
+.year-navigation ul li a {
+    text-decoration: none;
+    color: #CA7373;
+    font-size: 0.9rem;
+    font-family: "Sour Gummy";
+    font-style: oblique;
+}
+
+.year-navigation ul li a:hover {
+    text-decoration: underline;
+}

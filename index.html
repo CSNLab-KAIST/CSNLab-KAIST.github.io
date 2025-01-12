@@ -2,35 +2,29 @@
 layout: default
 ---
 
+<head>
+  <link rel="stylesheet" href="{{ 'css\index.css' | relative_url }}">
+</head>
 <div class='container'>
-    <header class="masthead text-center">
-      <h1>Welcome to Computer System and Network Lab(CSNLab)!</h1>
-      <span style="display: block; margin-bottom: 3em"></span>
-      <!-- <img class='img-responsive center-block' src="/images/people/Member1.jpg" width="60%" height="60%" /> -->
-      <div 
-          id="image-container" 
-          style="
-            width: 1000px; 
-            height: 600px; 
-            overflow: hidden; 
-            margin: 0 auto; 
-            display: flex; 
-            justify-content: center; 
-            align-items: center;"
-        >
-          <div class="image-slider">
-            <img 
-              id="image" 
-              class="img-responsive center-block" 
-              src="/images/people/Members1.jpg" 
-              style="width: 100%; height: 100%; object-fit: cover;"
-            />
-          </div>
-        </div>
-
-     <p>Refer to our research topics</p>
-      <p>
-        <div class="button" style="background-color: #4535C1;" data-index="0" onclick="navigateToSection(this)">
+  <header class="masthead text-center">
+    <div class="container_ps">
+      <div class="text-section">
+        <h2 style="font-size: 2.3rem;">
+          Welcome to the <span class="highlight" style="color: #D3756B ;">CSNLab</span>!
+        </h2>
+        <p>
+          Welcome to CSNLab, where we focus on three key research areas:
+          next-generation <a href="javascript:void(0);" data-index="0" style="color: #D3756B;"
+            onclick="navigateToSection(this)">Computer Architecture</a>, with emphasis on deep learning accelerators
+          and
+          memory systems;
+          high-performance <a href="javascript:void(0);" data-index="1" style="color: #D3756B;"
+            onclick="navigateToSection(this)">Interconnection Networks</a>, particularly Network-on-Chip designs for
+          heterogeneous systems; and
+          <a href="javascript:void(0);" data-index="2" style="color: #D3756B;"
+            onclick="navigateToSection(this)">Hardware Security</a>, investigating micro-architectural vulnerabilities
+          in GPU and NUMA architectures. Join us in advancing computing systems!
+          <!-- <div class="button" style="background-color: #4535C1;" data-index="0" onclick="navigateToSection(this)">
           <i>Computer Architecture</i>
         </div>
         <div class="button" style="background-color: #478CCF;" data-index="1" onclick="navigateToSection(this)">
@@ -41,45 +35,49 @@ layout: default
         </div>
         <div class="button" style="background-color: #77E4C8;" data-index="3" onclick="navigateToSection(this)">
           <i>Human Computer Interaction</i>
-        </div>
-        <span style="display: block; margin-bottom: 1em">
-        </span>
-        <p><i>Attention: We are actively recruiting students that are <span style="text-decoration: underline; text-decoration-color: green;">interested in computer architecture, GPU, hardware security, and deep learning architectures.</span> If you are interested, please contact us at <b>jjk12 at kaist dot edu</b>.</i></p>
-
-        <span style="display: block; margin-bottom: 3em"></span>
-
-      <!-- <a href="https://github.com/KordingLab"><i class="fa fa-github"></i> KordingLab</a>&nbsp;&nbsp;&nbsp;
-      <a href="https://twitter.com/KordingLab"><i class="fa fa-twitter"></i> KordingLab</a>&nbsp;&nbsp;&nbsp; -->
-      <a href="icnee@kaist.ac.kr"><i class="fa fa-envelope-o"></i> Email</a>
-      <a href="+82-42-350-7548"><i class="fa fa-phone"></i> Phone</a>
-      </p>
-
-      <div class="w3-container" style="   background: #fefefe; padding: 25px; border-radius:10px; border: 2px solid  #13be82">
-        <div style="text-align:left">
-          <h3> Recent News </h3>
-          <span style="display: block; margin-bottom: 1em"></span>
-          <div class="news">
-              {% capture now %}{{'now' | date: '%s' | minus: 7776000 %}}{% endcapture %}
-              <ul style="list-style-position:outside;padding:20px" >
-                {% for new in site.data.news %}
-                  {% capture date %}{{new.date | date: '%s' | plus: 0 %}}{% endcapture %}
-                  {% if date > now %}
-                    <li>
-                      <span>
-                        {{ new.details }}
-                      </span>
-                    </li>
-                  {% endif %}
-                {% endfor %}
-              </ul>
-          </div>
-        </div >
+        </div> -->
+        </p>
       </div>
+      <!-- Right Side: Image Section -->
+      <div class="image-section">
+        <img src="/images/people/Members1.jpg" width="60%" height="60%" alt="Lab Group Photo">
+      </div>
+    </div>
 
-     <span style="display: block; margin-bottom: 3em"></span>
+    <div class="news-section" style="background: #fefefe;">
+      <h2>Recent News</h2>
+      <div class="news-cards">
+        {% capture now %}{{ 'now' | date: '%s' | minus: 23328000 }}{% endcapture %}
+        {% for new in site.data.news %}
+        {% capture date %}{{ new.date | date: '%s' | plus: 0 }}{% endcapture %}
+        {% if date > now %}
+        <div class="news-card" style="border: 1px solid #ddd; border-radius: 10px; padding: 15px; margin-bottom: 15px;">
+          <!-- News type badge -->
+          <!-- News title -->
+          <h4 style="margin: 0; font-size: 0.8rem; color: #353535;">{{ new.title }}</h4>
+          <!-- News date -->
+          <p style="font-size: 0.4rem; color: #555; margin: 5px 0;">
+            {{ new.date | date: '%b %d, %Y' }} <span class="news-type {{ new.type }}">
+            </span>
+          </p>
+
+          <!-- News details -->
+        </div>
+        {% endif %}
+        {% endfor %}
+      </div>
+      <div class="see-more-container">
+        <a href="/news" class="see-more-btn" style="color:#D3756B;">See More →</a>
+      </div>
+    </div>
+    <div class="Contact">
+      <h2>Contact us</h2>
+      <p>You can send any comments on our research and this homepage to <a href="https://icn.kaist.ac.kr/~jjk12/"
+          style="color:#D3756B;">John
+          Kim</a></br>++ map and contacts here</p>
+
+    </div>
+    <p style="display: block; margin-bottom: 3em;text-align: center;">
       Department of Electrical Engineering at KAIST<br>
-      N1 518 Kim Byeong-ho IT building 291, Daehak-ro, Yuseong-gu, DaejeonRepublic of Korea.
-      <span style="display: block; margin-bottom: 3em"></span>
-
-    </header>
+      N1 518 Kim Byeong-ho IT building 291, Daehak-ro, Yuseong-gu, DaejeonRepublic of Korea.</p>
 </div>

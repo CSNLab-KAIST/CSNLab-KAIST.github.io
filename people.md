@@ -17,15 +17,15 @@ permalink: /people/
 
 <div class="pos_header">
 {% if role == 'pi' %}
-<h3> Associate Professor </h3>
+<h2> Associate Professor </h2>
  {% elsif role == 'phd' %}
-<h3>PhD candidates</h3>
+<h2>PhD candidates</h2>
  {% elsif role == 'gradstudent' %}
-<h3>Graduate Students</h3>
+<h2>Graduate Students</h2>
  {% elsif role == 'researchstaff' %}
-<h3>Undergraduate intern</h3>
+<h2>Undergraduate intern</h2>
  {% elsif role == 'alumni' %}
-<h3>Alumni</h3>
+<h2>Alumni</h2>
 {% endif %}
 </div>
 
@@ -43,15 +43,18 @@ permalink: /people/
           {% endif %}
           <!-- 名字部分：动态生成链接或纯文本 -->
           {% if profile.homepage %}
-            <a class="name" href="{{ profile.homepage }}" target="_blank" 
-               style="color: #000; text-decoration: none;" 
-               onmouseover="this.style.color='#36C2CE';" 
-               onmouseout="this.style.color='#000';"
-               onclick="this.style.color='#000';">
-              {{ profile.name }}
-            </a>
+          <a class="name" href="{{ profile.homepage }}" target="_blank" 
+            style="color: #000; text-decoration: none;" 
+            onmouseover="this.style.color='#D3756B';" 
+            onmouseout="this.style.color='#000';"
+            onclick="this.style.color='#000';">
+            {{ profile.name }}
+          </a>
           {% else %}
-            <a class="name" href="{{ site.baseurl }}{{ profile.url }}">{{ profile.name }}</a>
+            <a class="name" href="{{ site.baseurl }}{{ profile.url }}" style="color: #000; text-decoration: none;" 
+            onmouseover="this.style.color='#D3756B';" 
+            onmouseout="this.style.color='#000';"
+            onclick="this.style.color='#000';">{{ profile.name }}</a>
           {% endif %}
         </p>
       </div>    

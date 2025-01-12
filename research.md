@@ -46,18 +46,3 @@ permalink: /research/
 
 **Related papers:**
 
---
-<div id="Human-Vomputer-Interaction" style="padding-top: 60px;"></div>
-
-## Human Computer Interaction
-
-
-
-**Abstract:** The goal of rootkit is often to hide malicious software running on a compromised machine. While there has been significant amount of research done on different rootkits, we describe a new type of rootkit that is kernel-independent – i.e., no aspect of the kernel is modified and no code is added to the kernel address space to install the rootkit. In this work, we present PIkit – Processor-Interconnect rootkit that exploits the vulnerable hardware features within multi-socket servers that are commonly used in datacenters and high-performance computing. In particular, PIkit exploits the DRAM address mapping table structure that determines the destination node of a memory request packet in the processor interconnect. By modifying this mapping table appropriately, PIkit enables access to victim’s memory address region without proper permission.
-
-**Keywords:** 
-- KW1
-
-**Point Person:** D
-
-**Related papers:**

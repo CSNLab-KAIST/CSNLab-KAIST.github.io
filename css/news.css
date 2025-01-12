@@ -1,0 +1,163 @@
+/* 时间轴容器 */
+.timeline {
+    position: relative;
+    width: 60%;
+    margin: 0 auto;
+    padding: 2rem 0;
+}
+
+/* .timeline:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0%;
+    /* 轴线居中 */
+/* width: 2px;
+    height: 100%;
+    background-color: #ddd;
+} */
+
+
+/* 时间轴条目 */
+.timeline-item {
+    position: relative;
+    width: 100%;
+    padding: 1rem;
+    box-sizing: border-box;
+}
+
+
+/* 时间点标记 */
+.timeline-marker {
+    position: absolute;
+    top: 1.5rem;
+    /* 调整标记点的垂直位置 */
+    left: 50%;
+    transform: translateX(-50%);
+    width: 12px;
+    height: 12px;
+    background-color: #666;
+    border-radius: 50%;
+}
+
+/* 内容容器 */
+.timeline-content {
+    position: relative;
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 1rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* 标题和日期 */
+.timeline-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* margin-bottom: 0.1rem; */
+}
+
+.timeline-date {
+    font-size: 0.8rem;
+    color: #888;
+    font-family: 'Times New Roman';
+
+}
+
+/* 类型标记 */
+.leaf-icon {
+    display: inline-block;
+    padding: 0.2rem 0.5rem;
+    border-radius: 4px;
+    font-size: 0.8rem;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+/* 不同类型的颜色 */
+.leaf-icon.publication {
+    background-color: #D3756B;
+    /* 修改为新的颜色 */
+}
+
+.leaf-icon.news {
+    background-color: #975C8D;
+    /* 修改为新的颜色 */
+}
+
+.leaf-icon.award {
+    background-color: #FF5858;
+    /* 修改为新的颜色 */
+}
+
+.leaf-icon.position {
+    background-color: #FF7C7C;
+    /* 修改为新的颜色 */
+}
+
+/* 筛选按钮容器 */
+.filter-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+/* 小按钮样式 */
+.filter-btn-small {
+    padding: 0.3rem 0.6rem;
+    /* 增加按钮的内边距 */
+    border: none;
+    border-radius: 15px;
+    /* 使按钮形状更圆润可爱 */
+    font-size: 0.9rem;
+    cursor: pointer;
+    background-color: #ddd;
+    color: #333;
+    text-transform: capitalize;
+    font-family: 'Roboto Slab', serif;
+    /* 更改字体为 Roboto Slab */
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    /* 增加阴影效果 */
+    transition: all 0.3s ease;
+    /* 增加动画过渡效果 */
+}
+
+.filter-btn-small:hover {
+    transform: scale(1.1);
+    /* 鼠标悬停时放大效果 */
+    opacity: 0.9;
+    /* 鼠标悬停时调整透明度 */
+}
+
+.filter-btn-small[data-filter="all"] {
+    background-color: #D3756B;
+    color: white;
+}
+
+.filter-btn-small[data-filter="publication"] {
+    background-color: #975C8D;
+    color: white;
+}
+
+.filter-btn-small[data-filter="news"] {
+    background-color: #FF5858;
+    color: white;
+}
+
+.filter-btn-small[data-filter="award"] {
+    background-color: #FF7C7C;
+    color: white;
+}
+
+.filter-btn-small[data-filter="position"] {
+    background-color: #FD841F;
+    color: white;
+}
+
+
+.filter-btn-small:hover {
+    opacity: 0.8;
+}

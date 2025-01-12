@@ -1,0 +1,94 @@
+.news-section {
+    margin: 20px 0;
+}
+
+.news-section h2 {
+    text-align: left;
+}
+
+.news-cards {
+    display: flex;
+    /* 改为水平布局 */
+    gap: 15px;
+    max-height: 1000px;
+    /* 卡片之间的间距 */
+    overflow-x: auto;
+    /* 添加横向滚动条支持（如果内容超出容器宽度） */
+    padding-bottom: 10px;
+}
+
+.news-card {
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    padding: 15px;
+    max-width: 400px;
+    /* 设置最小宽度 */
+
+    /* 防止卡片缩小 */
+}
+
+.news-badge {
+    margin-bottom: 10px;
+}
+
+.news-type {
+    padding: 2px 4px;
+    border-radius: 4px;
+    /* 圆角样式 */
+    color: white;
+    /* 默认文字为白色 */
+    text-transform: capitalize;
+    display: inline-block;
+    /* 保持为标签样式 */
+    box-shadow: 0px 0px 1px rgba(0, 0, 0, 0.16);
+    /* 添加阴影效果 */
+}
+
+/* Publication 标签 */
+.news-type.publication {
+    background: #975C8D;
+    /* 紫色 */
+}
+
+/* News 标签 */
+.news-type.news {
+    background: #FF5858;
+    /* 红色 */
+}
+
+/* Award 标签 */
+.news-type.award {
+    background: #D3756B;
+    /* 粉红色 */
+}
+
+/* Position 标签 */
+.news-type.position {
+    background: #FF7C7C;
+    /* 橙色 */
+}
+
+
+.news-title {
+    margin: 0;
+    font-size: 1.3rem;
+    color: #0B666A;
+}
+
+.news-date {
+    font-size: 1rem;
+    color: #555;
+    margin: 5px 0;
+}
+
+.news-details {
+    font-size: 0.95rem;
+    color: #333;
+}
+
+.Contact h2,
+p {
+    text-align: left;
+}

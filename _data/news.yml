@@ -1,3 +1,70 @@
-- date: 2024-12-6
-  details: "Congradulate graduations to Gyubeom, Hyojun and Kihoon!"
+# Paper Announcements
+- date: 2025-03-01
+  title: "[HPCA 2025] 2 papers were accepted"
+  details: "Congratulations to Dongkyun: TidalMesh: Topology-Driven AllReduce Collective Communication for Mesh Topology; Hyojun: PIMnet: A Domain-Specific Network for Efficient Collective Communication in Scalable PIM."
+  type: publication
 
+- date: 2024-12-01
+  title: "[MICRO 2024] 2 papers were accepted"
+  details: "Congratulations to Jihyun: Ghost Arbitration: Mitigating Interconnect Side-Channel Timing Attacks; Jihyun: Uncovering Real GPU NoC Characteristics: Implications on Interconnect Architecture."
+  type: publication
+
+- date: 2024-09-01
+  title: "Welcome Hyeonwoo Sung to the lab!"
+  details: "Hyeonwoo Sung has joined the lab in September 2024!"
+  type: news
+
+- date: 2024-06-01
+  title: "[SIGMETRICS 2024] 1 paper was accepted"
+  details: "Congratulations to Gilbert: Scalability Limitations of Processing-in-Memory using Real System Evaluations."
+  type: publication
+
+- date: 2024-03-01
+  title: "Welcome Amin Hong, Dongkyun Lim, Beomsu Kim and Jina Song to the lab!"
+  details: "Amin Hong, Dongkyun Lim, Beomsu Kim, and Jina Song have joined the lab in March 2024!"
+  type: news
+
+- date: 2024-01-01
+  title: "Openings in the Lab"
+  details: "We are actively recruiting students interested in research on computer architecture, GPU, hardware security, and deep learning architectures. If you are interested, please contact us at jjk12 at kaist dot edu."
+  type: position
+
+- date: 2023-09-01
+  title: "Welcome Yuanxin Pang and Chistopher Rocca to the lab!"
+  details: "Yuanxin Pang and Chistopher Rocca have joined the lab in September 2023!"
+  type: news
+
+- date: 2023-06-01
+  title: "[ISCA 2023] 1 paper was accepted"
+  details: "Congratulations to Jiho: Decoupled SSD: Rethinking SSD Architecture through Network-based Flash Controllers."
+  type: publication
+
+- date: 2023-03-01
+  title: "[HPCA 2023] 1 paper was accepted"
+  details: "Congratulations to Hans: VVQ: Virtualizing Virtual Channel for Cost-Efficient Protocol Deadlock Avoidance."
+  type: publication
+
+- date: 2023-03-01
+  title: "Welcome Gyubeom Jeon to the lab!"
+  details: "Gyubeom Jeon has joined the lab in March 2023!"
+  type: news
+
+- date: 2022-12-01
+  title: "[MICRO 2022] 1 paper was accepted"
+  details: "Congratulations to Jiho: Networked SSD: The Flash Memory Interconnection Network for High-Bandwidth SSD."
+  type: publication
+
+- date: 2022-09-01
+  title: "Welcome Jihyun Kim and Xiangyu Wu to the lab!"
+  details: "Jihyun Kim and Xiangyu Wu have joined the lab in September 2022!"
+  type: news
+
+- date: 2022-06-01
+  title: "[ISCA 2022] 1 paper was accepted"
+  details: "Congratulations to Hans: Dynamic Global Adaptive Routing in High-radix Networks."
+  type: publication
+
+- date: 2021-09-01
+  title: "Welcome Sanzhar, Yassawe, Gilbert and Tho to the lab!"
+  details: "Sanzhar, Yassawe, Gilbert, and Tho have joined the lab in September 2021!"
+  type: news

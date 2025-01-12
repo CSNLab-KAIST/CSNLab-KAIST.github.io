@@ -3,7 +3,7 @@
 # # # # # # # #
 
 # Basic
-name:               "CSNLab@KAIST"
+name:               "Computer System and Network Lab@KAIST"
 title:              "CSNLab@KAIST"
 description:        "The Kording Lab is a computational neuroscience and causality research group at the University of Pennsylvania."
 
@@ -24,8 +24,8 @@ highlighter:        rouge
 nav:
   - name:           "home"
     href:           "/"
-  - name:           "about"
-    href:           "/about"
+  # - name:           "about"
+  #   href:           "/about"
   - name:           "publications"
     href:           "/publication"
   - name:           "people"
@@ -34,6 +34,8 @@ nav:
     href:           "/research"
   - name:           "lab teachings"
     href:           "/presentations"
+    name:           "news"
+    href:           "/news"
 
 # Sass
 sass:
