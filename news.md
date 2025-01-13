@@ -4,8 +4,8 @@ title: News
 ---
 
 <head>
-    <link rel="stylesheet" href="{{ 'css\news.css' | relative_url }}">
-    <script src="{{ 'js\news_cate.js' | relative_url }}"></script>
+    <link rel="stylesheet" href="{{ 'css/news.css' | relative_url }}">
+    <script src="{{ 'js/news_cate.js' | relative_url }}"></script>
 </head>
 <div class="filter-container">
   <button class="filter-btn-small" data-filter="all">All</button>
