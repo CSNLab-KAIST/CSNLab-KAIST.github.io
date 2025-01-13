@@ -4,6 +4,7 @@ permalink: /publication/
 ---
 <head>
     <link rel="stylesheet" href="{{ 'css/publication.css' | relative_url }}">
+    <script src="{{ '/js/publications.js' | relative_url }}"></script>
 </head>
 
 For those interested in numbers, see John's <a href="https://scholar.google.com/citations?user=ANnlqOwAAAAJ&hl=en" style="color: #CA7373;">
