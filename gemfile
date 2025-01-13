@@ -1,0 +1,4 @@
+source "https://rubygems.org"
+
+# 如果使用 GitHub Pages
+gem "github-pages", group: :jekyll_plugins

@@ -67,3 +67,5 @@ collections:
   people:
     output: true
     permalink: /people/:title/index.html
+
+gemfile: true
