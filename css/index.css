@@ -92,3 +92,50 @@
 p {
     text-align: left;
 }
+
+.see-more-container {
+    text-align: center;
+    margin-top: 5px;
+}
+
+.see-more-btn {
+    display: inline-block;
+    background-color: #fff;
+    /* 白色背景 */
+    color: #D3756B;
+    /* 红色文字 */
+    font-size: 0.6rem;
+    /* 字体更小 */
+    font-family: 'Roboto', sans-serif;
+    /* 字体样式 */
+    text-decoration: none;
+    /* 去掉下划线 */
+    padding: 3px 8px;
+    /* 更小的内边距 */
+    border-radius: 12px;
+    /* 圆润边角 */
+    border: 2px solid #D3756B;
+    /* 红色边框 */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    /* 添加悬停动画效果 */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    /* 添加轻微阴影 */
+}
+
+.see-more-btn:hover {
+    transform: translateY(-2px);
+    /* 悬停时向上移动 */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    /* 悬停时阴影增强 */
+}
+
+.see-more-btn:active {
+    transform: translateY(1px);
+    /* 点击时向下微动 */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    /* 点击时阴影还原 */
+}
+
+#map {
+    height: 100%;
+}
