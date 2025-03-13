@@ -24,7 +24,8 @@ html {
 
 body {
   color: #515151;
-  background: rgb(255, 255, 255);
+  background: #fefefe;
+  ;
   -webkit-text-size-adjust: 100%;
   -ms-text-size-adjust: 100%;
 }
@@ -358,20 +359,9 @@ tbody tr:nth-child(odd) th {
   margin-left: auto;
   margin-right: auto;
   width: 100%;
-  max-width: 1300px;
   margin: 0 auto;
   /* 确保内容水平居中 */
   padding: 0;
-
-  /* 去掉默认内边距 */
-  /* 同時限制最大寬度 */
-  /* padding: 2rem 1.5rem; */
-
-  /* @media (min-width: 40rem) {
-    /* padding: 5rem 1rem; 
-  } */
-
-  /* 垂直居中 */
 }
 
 .masthead {
@@ -912,11 +902,15 @@ tbody tr:nth-child(odd) th {
   background: rgb(255, 255, 255);
   border-radius: 8px;
   height: 100%;
+  width: 60%;
+  /* 修改为60%，占据父元素的60%宽度 */
+  margin: 0 auto;
+  /* 添加这一行，使容器水平居中 */
   /* 确保内容填充整个高度 */
 }
 
 .text-section {
-  width: 50%;
+  width: 60%;
   text-align: left;
   /* 设置文本向左对齐 */
 }
@@ -944,7 +938,8 @@ tbody tr:nth-child(odd) th {
   display: flex;
   justify-content: center;
   /* 图片水平居中 */
-  align-items: stretch;
+  align-items: flex-end;
+  /* 让图片贴到底部 */
   /* 图片拉伸以填满父容器高度 */
 }
 
@@ -954,6 +949,7 @@ tbody tr:nth-child(odd) th {
   height: 100%;
   /* 图片高度充满父容器 */
   object-fit: cover;
+  align-items: flex-end;
   /* 保持图片比例并裁剪多余部分 */
   border-radius: 4px;
   /* 圆角设置 */

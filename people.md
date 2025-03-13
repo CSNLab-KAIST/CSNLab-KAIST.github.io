@@ -2,7 +2,9 @@
 title: People
 permalink: /people/
 ---
-
+<head>
+    <link rel="stylesheet" href="{{ 'css/people.css' | relative_url }}">
+</head>
 {% assign people_sorted = site.people | sort: 'joined' %}
 {% assign role_array = "pi|phd|gradstudent|alumni" | split: "|" %}
 

@@ -2,6 +2,10 @@
 title: Research
 permalink: /research/
 ---
+<head>
+    <link rel="stylesheet" href="{{ 'css/research.css' | relative_url }}">
+</head>
+
 <div id="Computer-Architecture" style="padding-top: 60px;"></div>
 
 ## Computer Architecture

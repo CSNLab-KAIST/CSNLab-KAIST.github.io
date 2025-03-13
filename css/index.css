@@ -1,5 +1,7 @@
 .news-section {
-    margin: 20px 0;
+    margin: 0 auto;
+    width: 60%;
+
 }
 
 .news-section h2 {
@@ -88,6 +90,14 @@
     color: #333;
 }
 
+.Contact {
+    margin: 0 auto;
+    width: 60%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
 .Contact h2,
 p {
     text-align: left;
@@ -120,6 +130,7 @@ p {
     /* 添加悬停动画效果 */
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     /* 添加轻微阴影 */
+    margin-bottom: 20px;
 }
 
 .see-more-btn:hover {

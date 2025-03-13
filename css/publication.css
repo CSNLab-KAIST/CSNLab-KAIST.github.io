@@ -1,5 +1,7 @@
 html {
     scroll-behavior: smooth;
+    width: 60%;
+    margin: 0 auto;
 }
 
 .publication-page {
